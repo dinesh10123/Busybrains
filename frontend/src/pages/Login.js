@@ -63,7 +63,10 @@ const Login = () => {
                 <div style={{margin: '20px 0', textAlign: 'center'}}>
                     <p style={{color: 'var(--text-muted)'}}>Or login with</p>
                     <div style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
-                        <button className="btn glass" onClick={() => window.location.href='http://localhost:8080/oauth2/authorization/google'}>Google</button>
+                        <button className="btn glass" onClick={() => {
+                            const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+                            window.location.href = `${apiUrl.replace('/api', '')}/oauth2/authorization/google`;
+                        }}>Google</button>
                     </div>
                 </div>
 
