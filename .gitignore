@@ -1,0 +1,25 @@
+# Java and Maven artifacts
+backend/target/
+backend/.settings/
+backend/.project/
+backend/.classpath/
+backend/*.iml
+
+# Node.js artifacts
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDE structures
+.idea/
+.vscode/
+*.swp
+*.bak
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
